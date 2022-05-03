@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #f1f2f7;
 }
 
 ul{
@@ -55,3 +56,40 @@ ul{
 a{
   text-decoration: none;
 }
+
+
+
+  .right-panel a {
+    color: #6c757d;
+  }
+  .right-panel a:hover:not(.active) {
+    color: black;
+  }
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* right panel 并排布局的浮动块，两列并排 */
+
+  .subpage {
+    float: left;
+    width: 50%;
+    padding: 15px;
+  }
+  
+  /* 清除列之后的浮动 */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* 响应式布局 */
+  @media screen and (max-width:600px) {
+    .subpage {
+      width: 100%;
+    }
+  }
+    /* right panel 并排布局的浮动块 */
